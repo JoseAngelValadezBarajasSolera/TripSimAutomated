@@ -1,0 +1,23 @@
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\SharpKml.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Release Notes.txt
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Trip Simulator.exe.config
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Trip Simulator.exe
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Trip Simulator.pdb
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.csproj.AssemblyReference.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\MapUserControl.baml
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\MapUserControl.g.cs
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator_Content.g.cs
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator_MarkupCompile.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.g.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip_Simulator.MainForm.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip_Simulator.Map.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip_Simulator.Properties.Resources.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.csproj.GenerateResource.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.csproj.CoreCompileInputs.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.csproj.CopyComplete
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.exe
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Debug\Trip Simulator.pdb
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Debug\Newtonsoft.Json.xml

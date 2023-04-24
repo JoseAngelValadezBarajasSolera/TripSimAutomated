@@ -1,0 +1,53 @@
+June 10, 2020 - Bill Bassing
+- Added a selection for the braking rate (2 or 5 mph).
+
+
+November 7, 2018 - Bill Bassing
+- The maximum speed for the vehicle is now 125 mph (was 100 mph).
+
+
+April 6, 2018 - Bill Bassing
+- Added the File -> Reload Last File at Startup menu option. When enabled (checked),
+  the last file opened will be reloaded when the application is started. If a file
+  is successfully reloaded, the Connect button will automatically be pressed. The
+  default is unchecked (it will not reload the last opened file at startup).
+
+
+March 27, 2018 - JC Anderson
+- added a feature, loop kml, which will loop through supplied kml file indefinitely
+- fixed a bug where an exception would be created if the extrapolated trip went past
+	the last longitude and latitude point in the kml file.
+- fixed a bug where kml files with the same gps coords for the start and stop of a 
+	trip are the same would not start.
+
+
+March 14, 2018 - Bill Bassing
+- Corrected an issue where the vehicle data was not being sent when Engine On
+  was toggled.
+- The J1708 output window will now be cleared when no vehicle data being generated.
+
+
+March 5, 2018 - Bill Bassing
+- When opening a file, the file type (file extension) is now case insensitive.
+- The map zoom in/zoom out buttons now display their respective icons.
+- Added the File -> Exit menu option. Close and Exit will now try to close the COM ports
+  before closing the application.
+- The Options -> Display Map at Startup option was changed from a true/false selection
+  to a checkbox. The default is checked (it will display a map at startup).
+- Added the Options -> Initial Zoom Level menu option. This sets the map zoom level to
+  the scale indicated (e.g., 2500 feet). This is used when a map is created. The default
+  is 250 feet.
+- Added the Options -> Engine On at Startup menu option. This is a checkbox that sets
+  the Engine On value when the application is started. The default is off.
+- When Engine On is checked, PTO, Throttle, Speed, and RPM controls are enabled.
+- When Engine On is unchecked, PTO, Throttle, Speed, and RPM controls are disabled.
+  Speed and RPM are set to zero. Throttle is set to the minimum.
+- You can now close a map, even when the route is in progress.
+- You can open a map if one isn't already opened. If a route is in progress, it will
+  show the highlighted route and the route progress from the point in the route when
+  the map was created.
+- When the current route finishes, Speed and RPM are set to zero. Throttle is set to
+  the minimum.
+- You can start a new route when the current route finishes.
+- Speed will now display the decimal (e.g., 15.5, 45.0).
+- The route progress bar will now resize with the display.

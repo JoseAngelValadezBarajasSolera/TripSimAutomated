@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Trip_Simulator.MapUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF" mc:Ignorable="d" d:DesignHeight="472" d:DesignWidth="562">
+    <Grid OpacityMask="Black" Background="{x:Null}">
+        <m:Map Name="Map" 
+               Mode="AerialWithLabels"
+               MouseDoubleClick="MapWithPushpins_MouseDoubleClick"
+               MouseRightButtonUp="MapWithPushpins_MouseRightClick"
+               CredentialsProvider="ArWzcii2zGpUxv_5RkMt_wifpWgo6SoKES6ZqKPLzLwhfmiEIw8ZkZSh1QRU6mZQ" >
+        </m:Map>
+
+        <Button x:Name="ButtonZoomIn" HorizontalAlignment="Right" VerticalAlignment="Top"
+                Height="26" Width="26" Margin="0,25,0,0" Click="ButtonZoomIn_Click">
+            <Button.Content>
+                <Image Source="/Resources/zoom_in.png"/>
+            </Button.Content>
+        </Button>
+
+        <Button x:Name="ButtonZoomOut" HorizontalAlignment="Right" VerticalAlignment="Top"
+        Height="26" Width="26" Margin="0,55,0,0" Click="ButtonZoomOut_Click">
+            <Button.Content>
+                <Image Source="/Resources/zoom_out.png"/>
+            </Button.Content>
+        </Button>
+        
+    </Grid>
+</UserControl>

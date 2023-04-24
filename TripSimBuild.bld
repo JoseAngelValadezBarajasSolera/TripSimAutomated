@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project version='6'>
+	<steps type='0'>
+		<step action='Group'>
+			<name>Project steps</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[dim buildNum
+Builder.LogMessage "build name is %BUILD_NAME%",TRUE
+' THE RIGHT 14 CHARS SHOULD BE THE BUILD NUMBER IN THE FORMAT 00.00.0000.000
+buildNum = right("%BUILD_NAME%",14)
+Application.Macros(vbldTemporary).Add "THIS_BUILD_VERSION",buildNum
+
+
+]]></Script>
+			<description><![CDATA[The build name is passed to us as <name>_<build number>  - this script pulls out the build number part]]></description>
+			<indent type='3'>1</indent>
+			<name>Set version number from build name</name>
+		</step>
+		<step action='Run Script'>
+			<Language>VBScript</Language>
+			<Script><![CDATA[dim buildNum
+Builder.LogMessage "Version is %THIS_BUILD_VERSION%",TRUE
+' THE RIGHT 5 CHARS SHOULD BE THE major and minor IN THE FORMAT 00.00
+buildNum = left("%THIS_BUILD_VERSION%",5)
+Application.Macros(vbldTemporary).Add "XATA_PRODUCT_VERSION",buildNum
+
+
+]]></Script>
+			<description><![CDATA[The build name is passed to us as <name>_<build number>  - this script pulls out the build number part]]></description>
+			<indent type='3'>1</indent>
+			<name>Set product version number from version number</name>
+		</step>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<SubName>Setup Environment</SubName>
+			<indent type='3'>1</indent>
+			<name>Setup Env</name>
+		</step>
+		<step action='ZIP Files'>
+			<Action type='3'>2</Action>
+			<Compression>5</Compression>
+			<Dest>%PUBLISH_DIR%\Source.ZIP</Dest>
+			<Ext>*.*</Ext>
+			<Hidden type='11'>-1</Hidden>
+			<LogDetail type='11'>-1</LogDetail>
+			<Recurse type='11'>-1</Recurse>
+			<Source>%PROJDIR%</Source>
+			<indent type='3'>1</indent>
+			<name>ZIP Files for source escrow</name>
+		</step>
+		<step action='Make VS.NET'>
+			<AssemblyVer type='11'>-1</AssemblyVer>
+			<Attr type='11'>-1</Attr>
+			<Config>Release|Any CPU</Config>
+			<FileVer type='11'>0</FileVer>
+			<Filename>%projdir%\Trip Simulator.sln</Filename>
+			<Version>%THIS_BUILD_VERSION%</Version>
+			<VersionSel type='3'>2</VersionSel>
+			<indent type='3'>1</indent>
+			<name>Make VS.NET</name>
+		</step>
+		<step action='Subroutine Call'>
+			<Expand type='11'>-1</Expand>
+			<SubName>Copy Files</SubName>
+			<indent type='3'>1</indent>
+			<name>Copy to deployment</name>
+		</step></steps>
+	<steps type='1'>
+		<step action='Group'>
+			<name>Setup Environment</name>
+		</step>
+		<step action='Set Macro'>
+			<MacroEnvVar type='11'>-1</MacroEnvVar>
+			<MacroName>VSINSTALLDIR</MacroName>
+			<MacroValue>C:\Program Files (x86)\Microsoft Visual Studio 10.0\</MacroValue>
+			<indent type='3'>1</indent>
+			<name>Setup VSINSTALLDIR</name>
+		</step>
+		<step action='Set Macro'>
+			<MacroEnvVar type='11'>-1</MacroEnvVar>
+			<MacroName>FrameworkDir</MacroName>
+			<MacroValue>%WINDIR%\Microsoft.NET\Framework</MacroValue>
+			<indent type='3'>1</indent>
+			<name>Setup FrameworkDir</name>
+		</step>
+		<step action='Set Macro'>
+			<MacroEnvVar type='11'>-1</MacroEnvVar>
+			<MacroName>FrameworkVersion</MacroName>
+			<MacroValue>v4.0.30319</MacroValue>
+			<indent type='3'>1</indent>
+			<name>Setup FrameworkVersion</name>
+		</step>
+		<step action='Set Macro'>
+			<MacroEnvVar type='11'>-1</MacroEnvVar>
+			<MacroName>DevEnvDir</MacroName>
+			<MacroValue>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\</MacroValue>
+			<indent type='3'>1</indent>
+			<name>Setup DevEnvDir</name>
+		</step>
+		<step action='Set Macro'>
+			<MacroEnvVar type='11'>-1</MacroEnvVar>
+			<MacroName>PATH</MacroName>
+			<MacroValue>C:\Program Files (x86)\Microsoft F#\v4.0\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VSTSDB\Deploy;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\BIN;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Tools;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Windows\Microsoft.NET\Framework\v3.5;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\VCPackages;%PATH%</MacroValue>
+			<indent type='3'>1</indent>
+			<name>Setup Path</name>
+		</step>
+		<step action='Group'>
+			<name>Copy Files</name>
+		</step>
+		<step action='Copy Files'>
+			<Delay>15</Delay>
+			<DestDir>%PUBLISH_DIR%\</DestDir>
+			<Ext>*.*</Ext>
+			<Incremental type='11'>-1</Incremental>
+			<LogCopied type='11'>-1</LogCopied>
+			<ReadOnly type='11'>-1</ReadOnly>
+			<Recurse type='11'>-1</Recurse>
+			<Restartable type='11'>-1</Restartable>
+			<Retries>10</Retries>
+			<SourceDir>%PROJDIR%\</SourceDir>
+			<TBD type='11'>-1</TBD>
+			<indent type='3'>1</indent>
+			<name>Copy </name>
+		</step></steps>
+	<macros>
+		<macro name='MSBUILD'>
+			<value>%WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild.exe</value>
+		</macro>
+		<macro name='SIGNCODE'>
+			<parameters>SIGNFILENAME</parameters>
+			<value>%DOSCMD% "%ProgramFiles%\Microsoft Visual Studio .NET 2003\SDK\v1.1\Bin\signcode.exe" -spc %projdir%\CodeSigning\xataCodeSign.spc -v %projdir%\CodeSigning\xataCodeSign.pvk -t http://timestamp.verisign.com/scripts/timstamp.dll SIGNFILENAME</value>
+		</macro>
+		<macro name='XATACOPYRIGHT'>
+			<value>Copyright © 2006 XATA Corporation</value>
+		</macro></macros>
+</project>

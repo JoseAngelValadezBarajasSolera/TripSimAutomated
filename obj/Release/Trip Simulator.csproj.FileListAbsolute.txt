@@ -1,0 +1,41 @@
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\SharpKml.dll
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\Release Notes.txt
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\Trip Simulator.exe.config
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\Trip Simulator.exe
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\Trip Simulator.pdb
+E:\Builds\27\XataNG\TripSimulator\Sources\bin\Release\Microsoft.Maps.MapControl.WPF.dll
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator.csprojResolveAssemblyReference.cache
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\MapUserControl.baml
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\MapUserControl.g.cs
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator_Content.g.cs
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator_MarkupCompile.cache
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator.g.resources
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip_Simulator.MainForm.resources
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip_Simulator.Map.resources
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip_Simulator.Properties.Resources.resources
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator.csproj.GenerateResource.Cache
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator.exe
+E:\Builds\27\XataNG\TripSimulator\Sources\obj\Release\Trip Simulator.pdb
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\SharpKml.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Release Notes.txt
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Trip Simulator.exe.config
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Trip Simulator.exe
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Trip Simulator.pdb
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Newtonsoft.Json.dll
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\bin\Release\Newtonsoft.Json.xml
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.csproj.AssemblyReference.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\MapUserControl.baml
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\MapUserControl.g.cs
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator_Content.g.cs
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator_MarkupCompile.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.g.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip_Simulator.MainForm.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip_Simulator.Map.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip_Simulator.Properties.Resources.resources
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.csproj.GenerateResource.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.csproj.CoreCompileInputs.cache
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.csproj.CopyComplete
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.exe
+C:\Users\Jose.Valadez\Downloads\TripSimulator_04.60.0031.000\obj\Release\Trip Simulator.pdb
